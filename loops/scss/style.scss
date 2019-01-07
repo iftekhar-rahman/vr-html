@@ -1,0 +1,17 @@
+// Loops
+
+//@for $i from 1 through 10{
+	//.box-#{$i}{
+		//background-color: adjust-hue(tomato, $i * 20%);
+		//width: 100px;
+		//height: 100px;
+		//display: inline-block;
+	//}
+//}
+
+$teachers: ('karim', 'rahim', 'joshim', 'roshim');
+@each $teacher in $teachers {
+	.teacher-#{$teacher} {
+		background-image: url('img/#{$teacher}.jpg');
+	}
+}
